@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
      //Request SQLite
         myManage = new MyManage(this);
 
+
     } // Main Method
 
 } // Main Class
