@@ -15,12 +15,12 @@ public class MyManage {
     private SQLiteDatabase sqLiteDatabase;
 
     public static final String user_table  ="userTable";
-    public static final String column_id ="_id";
+    public static final String column_id="_id";
     public static final String column_user="User";
     public static final String column_pass="Password";
     public static final String column_name="Name";
 
-    public static final String food_table="foodTABLE";
+    public static final String food_table="foodTable";
     public static final String column_food="Food";
     public static final String column_price="Price";
     public static final String column_source="Source";
@@ -46,7 +46,8 @@ public class MyManage {
                 contentValues.put(column_pass, strSecond);
                 contentValues.put(column_name,strThird);
 
-                myLong=sqLiteDatabase.insert(column_user, null,contentValues);
+                myLong=sqLiteDatabase.insert(user_table, null,contentValues);
+                //myLong=sqLiteDatabase.insert(column_user, null,contentValues);
                 break;
             case 1:
                 //for foodTable
